@@ -1,4 +1,4 @@
-package com.company;
+package person.walker;
 
 import org.omg.Messaging.SYNC_WITH_TRANSPORT;
 

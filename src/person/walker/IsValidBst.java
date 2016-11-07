@@ -1,7 +1,4 @@
-package com.company;
-
-import com.sun.corba.se.pept.transport.InboundConnectionCache;
-import org.omg.CORBA.NO_IMPLEMENT;
+package person.walker;
 
 /**
  * Created by Administrator on 2016/7/31 0031.

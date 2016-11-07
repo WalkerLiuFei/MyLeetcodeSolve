@@ -1,4 +1,4 @@
-package com.company;
+package person.walker;
 
 /**
  * % 12.7 beat!.....

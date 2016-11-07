@@ -20,7 +20,7 @@ class Example {
 
 public class Main {
     public static void main(String[] args) {
-    /*    ContainsNearbyAlmostDuplicate con = new ContainsNearbyAlmostDuplicate();
+    /*    person.walker.ContainsNearbyAlmostDuplicate con = new person.walker.ContainsNearbyAlmostDuplicate();
 
         con.containsNearbyAlmostDuplicate(new int[]{45,8,8,75,18,58,128,41},15,64);*/
 /*        ArrayList<ArrayList<Integer>> results = Solution.FindContinuousSequence(100);
@@ -37,13 +37,13 @@ public class Main {
         System.out.println(str3.intern() == str3);*/
         /*System.out.println(10_100);
         System.out.println(1000 & 1100);*/
-        //System.out.println(new NumSquares().numSquares(12));
-        //System.out.println(new LargestDivisibleSubset().largestDivisibleSubset(new int[]{1,2,4,8,9,72}));
-        //System.out.println(new MaximumSubarray().maxSubArray(new int[]{-2,1,-3,4,-1,2,1,-5,4}));
-        //System.out.println(new MaxProfitI().maxProfit(new int[]{7, 1, 5, 3, 6, 4}));
-        //System.out.println(new UniquePaths().uniquePaths(3,3));
-        //System.out.println(new MinimumPathSum().minPathSum(new int[][]{{1,3,1},{1,5,1},{4,2,1}}));
-        //System.out.println(new MinimumPathSum().minPathSum(new int[][]{{0}}));
+        //System.out.println(new person.walker.NumSquares().numSquares(12));
+        //System.out.println(new person.walker.LargestDivisibleSubset().largestDivisibleSubset(new int[]{1,2,4,8,9,72}));
+        //System.out.println(new person.walker.MaximumSubarray().maxSubArray(new int[]{-2,1,-3,4,-1,2,1,-5,4}));
+        //System.out.println(new person.walker.MaxProfitI().maxProfit(new int[]{7, 1, 5, 3, 6, 4}));
+        //System.out.println(new person.walker.UniquePaths().uniquePaths(3,3));
+        //System.out.println(new person.walker.MinimumPathSum().minPathSum(new int[][]{{1,3,1},{1,5,1},{4,2,1}}));
+        //System.out.println(new person.walker.MinimumPathSum().minPathSum(new int[][]{{0}}));
         System.out.println(new DecodeWays().numDecodings("1212"));
  /*       String str4 = new String("计算机软件");
         System.out.println(str4.intern() == str4);

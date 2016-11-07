@@ -1,4 +1,4 @@
-package com.company;
+package person.walker;
 
 import java.util.Arrays;
 

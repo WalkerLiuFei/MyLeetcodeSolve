@@ -1,4 +1,4 @@
-package com.company;
+package person.walker;
 
 import com.company.algorithm.BinarySearchTree;
 import com.company.algorithm.Node;

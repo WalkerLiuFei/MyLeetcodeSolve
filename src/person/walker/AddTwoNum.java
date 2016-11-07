@@ -1,5 +1,4 @@
-package com.company;
-
+package person.walker;
 
 class ListNode {
     int val;
