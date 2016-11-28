@@ -8,17 +8,19 @@ import java.util.HashMap;
  */
 public class NumSquares {
     public int numSquares(int n) {
-        if (n < 1)
-            return 0;
-        int[] cache = new int[n+1];
-        Arrays.fill(cache,Integer.MAX_VALUE);
-        cache[0] = 0;
-        //三个数可开平方数的只要等于n就是最短的,特殊情况
-        for (int i = 1 ; i <= n ;i++){
-            for (int j = 1; j * j <= i;j++)
-                cache[i] = Math.min(cache[i],cache[i - j*j] + 1);
+        int[] dp = new int[n+1];
+        Arrays.fill(dp,Integer.MAX_VALUE);
+        dp[0] = 0;
+        dp[1] = 1;
+        for (int index = 1;index <= n;index++){
+            for (int i = 1; i * i <= index ;i++){
+                dp[index] = Math.min(dp[index],Math.min(dp[index - 1] + 1,1 + dp[index - i*i]));
+            }
         }
-        return cache[n-1];
+        return dp[n];
     }
 
+    public static void main(String[] args){
+        System.out.println(new NumSquares().numSquares(13));
+    }
 }

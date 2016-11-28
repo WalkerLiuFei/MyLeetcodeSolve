@@ -5,15 +5,6 @@ package person.walker;
  */
 
 //beat 33.15%.....
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
-
-    TreeNode(int x) {
-        val = x;
-    }
-}
 
 public class IsValidBst {
         public boolean isValidBST(TreeNode root) {
