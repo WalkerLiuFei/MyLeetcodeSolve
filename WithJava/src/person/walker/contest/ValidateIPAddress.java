@@ -9,7 +9,6 @@ import java.util.regex.Pattern;
  * Created by Administrator on 2016/12/11 0011.
  */
 public class ValidateIPAddress {
-
     public String validIPAddress(String IP) {
         if (isIPv4(IP)) {
             return "IPv4";
@@ -21,19 +20,26 @@ public class ValidateIPAddress {
     public boolean isIPv4(String IP) {
         if (!IP.contains("."))
             return false;
-
+        if (IP.charAt(IP.length() - 1) == '.'){
+            return false;
+        }
         for (int index = 0;index < IP.length();index++){
             char c = IP.charAt(index);
             if (!((c >= 48 && c <= 57) || c == '.') )
                 return false;
+
         }
         IP = IP.replace(".","&");
         String[] ips = IP.split("&");
         if (ips.length != 4)
             return false;
         for (int index = 0; index < 4;index++){
-            if (ips[index] .startsWith("0"))
-            return false;
+            if (ips[index].length() > 3)
+                return false;
+            if (ips[index].length() > 1 && ips[index] .startsWith("0"))
+                return false;
+            if (ips[index].equals(""))
+                return false;
             if(Integer.parseInt(ips[index]) > 255)
                 return false;
         }
@@ -43,7 +49,9 @@ public class ValidateIPAddress {
     public boolean isIPv6(String IP) {
         if (!IP.contains(":"))
             return false;
-
+        if (IP.charAt(IP.length() - 1) == ':'){
+            return false;
+        }
         for (int index = 0;index < IP.length();index++){
             char c = IP.charAt(index);
             if (!((c >= 48 && c <= 57) || (c >= 65 && c <= 70) || (c >= 97 && c <= 102) || c == ':'))
@@ -68,9 +76,5 @@ public class ValidateIPAddress {
         if (!flag && ips.length != 8)
             return false;
         return true;
-    }
-    @Test
-    public  void test(){
-     System.out.println( new ValidateIPAddress().validIPAddress("2001:db8:85a3:0::8a2E:0370:7334"));
     }
 }

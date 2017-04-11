@@ -1,5 +1,9 @@
 package person.walker.backtracking;
 
+import org.junit.Test;
+
+import java.io.UnsupportedEncodingException;
+import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -44,5 +48,20 @@ public class PalindromePartitioning {
     }
     public static void main(String[] args){
         new PalindromePartitioning().partition("aabb");
+    }
+
+    @Test
+    public void test(){
+        byte[] bytes = new byte[]{-1};
+        try {
+            String string1 = new String(bytes, "ascii");
+            byte[] bytes2 = string1.getBytes("ascii");
+            System.out.println(bytes2[0]);
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
+
+
+
     }
 }
