@@ -4,7 +4,6 @@ import (
 	"fmt"
 	"math"
 	"./solutions"
-	"strings"
 )
 
 
@@ -24,8 +23,9 @@ func main() {
 	}
 	solutions.ReorderList(list)*/
 	//fmt.Println(solutions.FindMin([]int{3,3,3,3,3,3,1,2}))
-	fmt.Println(strings.Compare("","1"))
-	fmt.Println(solutions.CompareVersion("0.1","1.0"))
+	//fmt.Println(strings.Compare("","1"))
+//	fmt.Println(solutions.CompareVersion("0.1","1.0"))
+	fmt.Println(solutions.FindKthLargest([]int{3,1,2,4},2))
 /*	for index := 0;index < 10;index ++ {
 		testArray := make([]int,0)
 		for index := 0;index < 10;index ++{
