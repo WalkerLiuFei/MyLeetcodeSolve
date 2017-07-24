@@ -1,7 +1,5 @@
 package solutions
 
-
-
 func sortedListToBST(head *ListNode) *TreeNode {
 	theArray := make([]int, 0)
 	for head != nil {

@@ -1,40 +1,41 @@
 package main
 
 import (
+	"./solutions"
 	"fmt"
 	"math"
-	"./solutions"
 )
-
 
 func main() {
 	//fmt.Println(MaxProduct([]int{-5, -2, -4}))
-/*	head := &solutions.ListNode{
-		Val:0,
-		Next:nil,
-	}
-	list := head
-	for index := 1;index < 11;index ++ {
-		head.Next = &solutions.ListNode{
-			Val:index,
+	/*	head := &solutions.ListNode{
+			Val:0,
 			Next:nil,
 		}
-		head = head.Next
-	}
-	solutions.ReorderList(list)*/
+		list := head
+		for index := 1;index < 11;index ++ {
+			head.Next = &solutions.ListNode{
+				Val:index,
+				Next:nil,
+			}
+			head = head.Next
+		}
+		solutions.ReorderList(list)*/
 	//fmt.Println(solutions.FindMin([]int{3,3,3,3,3,3,1,2}))
 	//fmt.Println(strings.Compare("","1"))
-//	fmt.Println(solutions.CompareVersion("0.1","1.0"))
-	fmt.Println(solutions.FindKthLargest([]int{3,1,2,4},2))
-/*	for index := 0;index < 10;index ++ {
-		testArray := make([]int,0)
+	//	fmt.Println(solutions.CompareVersion("0.1","1.0"))
+	//fmt.Println(solutions.CountSubStrings("abccba"))
+	fmt.Println(solutions.FindLongestChain([][]int{{-10,-8},{8,9},{-5,0},{6,10},{-6,-4},{1,7},{9,10},{-4,7}}))
+	//fmt.Println(solutions.MaximalSquare([][]byte{{1, 0, 1, 0, 0}, {1, 0, 1, 1, 1}, {1, 1, 1, 1, 1}, {1, 0, 0, 1, 0}})) //"10100","","","00]))
+	/*	for index := 0;index < 10;index ++ {1
+		testArray := make({]int,0)
 		for index := 0;index < 10;index ++{
 			testArray = append(testArray,rand.Intn(100))
 		}
 
 		quickSort(testArray,0,len(testArray)-1)
 	}*/
-//solutions.SingleNumberII([]int{-2,-2,1,1,-3,1,-3,-3,-4,-2})
+	//solutions.SingleNumberII([]int{-2,-2,1,1,-3,1,-3,-3,-4,-2})
 	//fmt.Println(solutions.FindRepeatedDnaSequences("AAAAAAAAAAA"))
 
 }
@@ -65,7 +66,7 @@ func quickSort(nums []int, low int, high int) []int {
 	key := nums[0]
 	i := low + 1
 	j := high
-	for (i < j) {
+	for i < j {
 		for ; key > nums[i] && i < j; i++ {
 		}
 		for ; key < nums[j] && j > i; j-- {
@@ -74,10 +75,10 @@ func quickSort(nums []int, low int, high int) []int {
 		i++
 		j--
 	}
-	fmt.Printf("%d,%d",i,j)
+	fmt.Printf("%d,%d", i, j)
 	fmt.Println(nums)
 	fmt.Println()
-	quickSort(nums[low:j-1],low,j-1)
-	quickSort(nums[j+1:high],j+1,high)
+	quickSort(nums[low:j-1], low, j-1)
+	quickSort(nums[j+1:high], j+1, high)
 	return nil
 }
