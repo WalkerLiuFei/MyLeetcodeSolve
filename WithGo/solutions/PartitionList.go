@@ -1,6 +1,5 @@
 package solutions
 
-
 func partition(head *ListNode, x int) *ListNode {
 	partition_smaller := ListNode{}
 	partition_not_smaller := ListNode{}

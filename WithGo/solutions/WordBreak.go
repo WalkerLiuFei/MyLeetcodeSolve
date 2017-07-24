@@ -2,7 +2,6 @@ package solutions
 
 import (
 	"fmt"
-
 )
 
 func wordBreak(s string, wordDict []string) bool {

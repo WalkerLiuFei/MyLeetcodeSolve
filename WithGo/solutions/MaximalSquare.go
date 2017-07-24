@@ -1,5 +1,6 @@
 package solutions
 
+
 import (
 	"fmt"
 )
@@ -63,3 +64,4 @@ func mySqrt(num byte) byte {
 	return byte(math.Sqrt(floatNum))
 }
 */
+
