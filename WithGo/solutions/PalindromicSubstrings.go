@@ -1,6 +1,5 @@
 package solutions
 
-import "fmt"
 
 /**
 Given a string, your task is to count how many palindromic substrings in this string.
@@ -36,7 +35,6 @@ func countSubstrings(s string) int {
 
 			  for (leftIndex >= maxLeft && rightIndex <= maxRight){
 				  if (s[leftIndex] == s[rightIndex]){
-					  fmt.Println(s[leftIndex:rightIndex+1])
 					  leftIndex--
 					  rightIndex++
 					  resultCount++
@@ -48,7 +46,6 @@ func countSubstrings(s string) int {
 		  leftIndex,rightIndex = index,index
 		  for (leftIndex >= maxLeft && rightIndex <= maxRight){
 			  if (s[leftIndex] == s[rightIndex]){
-				  fmt.Println(s[leftIndex:rightIndex+1])
 				  leftIndex--
 				  rightIndex++
 				  resultCount++
